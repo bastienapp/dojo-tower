@@ -1,7 +1,7 @@
 # Tower
 
-	Dessiner une tour de N étages, en commençant par le sommet et en allant jusqu’à la base, les étages étant centrés (voir exemples ci-dessous).
-	La tour doit être représentée sous la forme d'un tableau, ou chaque étage est une chaîne de caractères. La méthode prendra le nombre d’étages en paramètre.
+Dessiner une tour de N étages, en commençant par le sommet et en allant jusqu’à la base, les étages étant centrés (voir exemples ci-dessous).
+La tour doit être représentée sous la forme d'un tableau, ou chaque étage est une chaîne de caractères. La méthode prendra le nombre d’étages en paramètre.
 
 ##Exemples :
 
