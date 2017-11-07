@@ -56,4 +56,23 @@ class Tower {
 		}
 		return tower;
 	}
+	
+	public static String[] buildTowerBiLoop (int n) {
+
+		String[] tower = new String [n];
+
+		for (int i = 0; i < n; i++) {
+			String level = "";
+			for (int j = 0; j < (2*n -1); j++) {
+				if ((j < n - 1 - i) || (j >= n + i)) {
+					level += " ";
+				} else {
+					level += "*";
+				}
+			}
+			tower[i] = level;	
+		}
+		return tower;
+	}
+	
 }
