@@ -11,4 +11,25 @@ class Tower {
 		}
 		return tower;
 	}
+	
+	public static String[] buildTowerLoops(int nbreEtages) {
+		String[] tower = new String[nbreEtages];
+
+		for (int i = 1; i <= tower.length; i++ ) {
+			int nbEtoile = i + i -1;
+			int nbEspace = nbreEtages - i;
+
+			String espace = "";
+			for(int j=0; j < nbEspace; j++){
+				espace = espace + " ";
+			}
+			String etoile = "";
+			for (int k=0; k < nbEtoile; k++){
+				etoile = etoile + "*";
+			}
+
+			tower[i-1] = espace + etoile + espace;
+		}
+		return tower;
+	}
 }
