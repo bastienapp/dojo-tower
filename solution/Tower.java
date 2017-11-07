@@ -32,4 +32,28 @@ class Tower {
 		}
 		return tower;
 	}
+	public static String[] buildTowerVariable(int nbEtage){
+		String[] tower = new String[nbEtage];
+		int nbEtoile=1;
+		for(int i = 1; i<=nbEtage; i++) {
+			String etage="";
+
+			for(int j = 0; j< nbEtage - i; j++){
+				etage += " ";
+			}
+
+			for(int j=0;j<nbEtoile;j++){
+				etage += "*";
+			}
+			
+			for(int j = 0; j< nbEtage - i; j++){
+				etage += " ";
+			}
+
+			tower[i-1] = etage;
+
+			nbEtoile+=2;
+		}
+		return tower;
+	}
 }
